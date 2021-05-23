@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Shopping Cart</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="container">
+            <div class="cart">
+                <div class="col-md-12 col-lg-10 mx-auto">
+                    <h1 class="text-white  text-center pb-4">    Ice-Cream Shopping Cart</h1>
+                    <div class="cart-item">
+                        <div class="row">
+                            <div class="col-md-7 center-item">
+                                <img src="./images/ice1.jpg" alt="">
+                                <h5>Vanilla Flavour Ice-Cream</h5>
+                            </div>
+                            <div class="col-md-5 center-item">
+                                <div class="input-group number-spinner">
+                                    <button onclick="productChange('pro1' , false)" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                                    <input id="pro1-count" type="text" class="form-control text-center" value="1">
+                                    <button onclick="productChange('pro1' , true)" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <h5>$ <span id="pro1-total">30</span> </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="row">
+                            <div class="col-md-7 center-item">
+                                <img src="./images/ice2.png" alt="">
+                                <h5> Cone Ice-Cream</h5>
+                            </div>
+                            <div class="col-md-5 center-item">
+                                <div class="input-group number-spinner">
+                                    <button onclick="productChange('pro2' , false)" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                                    <input id="pro2-count" type="text" class="form-control text-center" value="1">
+                                    <button onclick="productChange('pro2' , true)" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <h5>$ <span id="pro2-total">40</span> </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="row">
+                            <div class="col-md-7 center-item">
+                                <img src="./images/ice3.png" alt="">
+                                <h5>Chocalate Flavour Ice-Cream</h5>
+                            </div>
+                            <div class="col-md-5 center-item">
+                                <div class="input-group number-spinner">
+                                    <button onclick="productChange('pro3' , false)"class="btn btn-default"><i class="fas fa-minus"></i></button>
+                                    <input id="pro3-count" type="text" class="form-control text-center" value="1">
+                                    <button onclick="productChange('pro3' , true)" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <h5>$ <span id="pro3-total">50</span> </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="row">
+                            <div class="col-md-7 center-item">
+                                <img src="./images/ice4.png" alt="">
+                                <h5>Candy Vanilla  Ice-Cream</h5>
+                            </div>
+                            <div class="col-md-5 center-item">
+                                <div class="input-group number-spinner">
+                                    <button onclick="productChange('pro4' , false)"class="btn btn-default"><i class="fas fa-minus"></i></button>
+                                    <input id="pro4-count" type="text" class="form-control text-center" value="1">
+                                    <button onclick="productChange('pro4' , true)"class="btn btn-default"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <h5>$ <span id="pro4-total">40</span> </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="row">
+                    
+                            <div class="col-md-7">
+                                <h5>Subtotal: </h5>
+                                <h5>Tax:</h5>
+                                <h5>Total:</h5>
+                            </div>
+                    
+                            <div class="col-md-4 status">
+                                <h5 id="total-price">$00</h5>
+                                <h5 id="tax-amount">$0</h5>
+                                <h5 id="grand-total">$00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 pt-4 pb-4">
+                        <button type="button" class="btn btn-success check-out">Check Out</button>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
